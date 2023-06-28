@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Web.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Developer")]
     [ApiController]
     public class DeveloperController : ControllerBase
     {

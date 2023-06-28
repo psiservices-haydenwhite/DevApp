@@ -1,8 +1,16 @@
+using App;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllersWithViews();
+//builder.Services.AddControllersWithViews();
+
+builder.Services.AddControllers();
+
+var settings = new Settings(builder.Configuration);
+
+DiConfigurations.ConfigureServices(builder.Services, settings);
 
 var app = builder.Build();
 
@@ -17,6 +25,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseCors(cors => cors.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 app.MapControllerRoute(
     name: "default",

@@ -16,7 +16,7 @@ namespace App.Adapters
         public abstract Task<Developer> GetDeveloperByName(string name);
 
         [Sql("GetDeveloperGames", Schema = "dbo")]
-        public abstract Task<Game> GetDeveloperGames(string name, string rating = "All");
+        public abstract Task<IEnumerable<Game>> GetDeveloperGames(string name, string rating = "All");
 
         [Sql("AddDeveloper", Schema = "dbo")]
         public abstract Task AddDeveloper(Developer model);

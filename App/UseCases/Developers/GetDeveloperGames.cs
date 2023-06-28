@@ -13,6 +13,6 @@ namespace App.UseCases.Developers
             _devDBAdapter = devDBAdapter;
         }
 
-        public async Task<Game> Execute(string name, string rating) => await _devDBAdapter.GetDeveloperGames(name, rating);
+        public async Task<IEnumerable<Game>> Execute(string name, string rating) => await _devDBAdapter.GetDeveloperGames(name, rating);
     }
 }
