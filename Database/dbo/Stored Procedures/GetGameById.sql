@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE [dbo].[GetGameById]
+	@Id INT
+AS
+BEGIN
+	SELECT *
+	FROM dbo.Games
+	WHERE Id = @Id
+END
+GO

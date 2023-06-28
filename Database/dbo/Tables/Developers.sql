@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Developers]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[Name] VARCHAR(50) NOT NULL,
+	[Founded] DATE NOT NULL,
+	[Headquarters] VARCHAR(50) NULL,
+	CONSTRAINT [PK_DevId] PRIMARY KEY CLUSTERED ([Id] ASC)
+)
