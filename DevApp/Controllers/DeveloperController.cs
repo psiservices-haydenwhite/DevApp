@@ -11,6 +11,7 @@ namespace Web.Controllers
         // GET: api/<DeveloperController>
         [HttpGet("AllDevelopers")]
         public async Task<ActionResult<List<Developer>>> GetAllDevelopers([FromServices] GetAllDevelopers getAllDevelopers)
+            
         {
             return Ok(await getAllDevelopers.Execute());
         }
