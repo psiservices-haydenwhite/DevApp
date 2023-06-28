@@ -3,6 +3,7 @@ using App.Models;
 
 namespace App.UseCases.Games
 {
+    [TransientService]
     public class DeleteGame
     {
         private readonly GameDBAdapter _gameDBAdapter;
