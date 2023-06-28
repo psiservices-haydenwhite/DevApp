@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Games](
+	[Id] INT IDENTITY(1,1) NOT NULL,
+	[DevId] INT NULL,
+	[Name] VARCHAR(50) NOT NULL,
+	[Developer] VARCHAR(50) NOT NULL,
+	[ReleaseDate] DATE NOT NULL,
+	[ESRBRating] VARCHAR(10) NOT NULL,
+	CONSTRAINT [PK_GameId] PRIMARY KEY CLUSTERED ([Id] ASC),
+	CONSTRAINT [FK_Games_Developers] FOREIGN KEY ([DevId]) REFERENCES [dbo].[Developers] (Id)
+)
