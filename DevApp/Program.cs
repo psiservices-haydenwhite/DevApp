@@ -1,4 +1,5 @@
 using App;
+using App.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
