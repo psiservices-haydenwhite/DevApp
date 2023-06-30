@@ -37,7 +37,7 @@ namespace Web.Controllers
 
         // POST api/<DeveloperController>
         [HttpPost("AddNewDeveloper")]
-        public async Task<IActionResult> AddDeveloper([FromServices] AddDeveloper addDeveloper, [FromBody] Developer model)
+        public async Task<IActionResult> AddDeveloper([FromServices] AddDeveloper addDeveloper, [FromBody] NewDeveloper model)
         {
             await addDeveloper.Execute(model);
 

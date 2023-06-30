@@ -6,7 +6,7 @@
 AS
 SET NOCOUNT ON
 BEGIN
-	INSERT INTO Games(DevId, Name, Developer, ReleaseDate, ESRBRating)
+	INSERT INTO dbo.Games(DevId, Name, Developer, ReleaseDate, ESRBRating)
 	VALUES ((SELECT Id
 			 FROM dbo.Developers u
 			 WHERE u.Name = @Developer), 

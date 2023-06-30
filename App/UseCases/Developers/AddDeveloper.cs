@@ -13,7 +13,7 @@ namespace App.UseCases.Developers
             _devDBAdapter = devDBAdapter;
         }
 
-        public async Task Execute(Developer model)
+        public async Task Execute(NewDeveloper model)
         {
             await _devDBAdapter.AddDeveloper(model);
         }

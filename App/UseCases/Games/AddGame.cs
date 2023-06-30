@@ -13,7 +13,7 @@ namespace App.UseCases.Games
             _gameDBAdapter = gameDBAdapter;
         }
 
-        public async Task Execute(Game model)
+        public async Task Execute(NewGame model)
         {
             await _gameDBAdapter.AddGame(model);
         }

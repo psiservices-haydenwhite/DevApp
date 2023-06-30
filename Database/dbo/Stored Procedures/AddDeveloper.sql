@@ -5,7 +5,7 @@
 AS
 SET NOCOUNT ON
 BEGIN
-	INSERT INTO Developers(Name, Founded, Headquarters)
+	INSERT INTO dbo.Developers(Name, Founded, Headquarters)
 	VALUES (@Name, @Founded, @Headquarters)
 END
 GO

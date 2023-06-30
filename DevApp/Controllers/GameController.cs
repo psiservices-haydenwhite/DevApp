@@ -36,7 +36,7 @@ namespace Web.Controllers
 
         // POST api/<GameController>
         [HttpPost("AddNewGame")]
-        public async Task<IActionResult> AddGame([FromServices] AddGame addGame, [FromBody] Game model)
+        public async Task<IActionResult> AddGame([FromServices] AddGame addGame, [FromBody] NewGame model)
         {
             await addGame.Execute(model);
 
