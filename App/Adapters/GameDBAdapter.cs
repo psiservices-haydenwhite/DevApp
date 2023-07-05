@@ -19,7 +19,7 @@ namespace App.Adapters
         public abstract Task<Developer> GetGameDev(string name);
 
         [Sql("AddGame", Schema = "dbo")]
-        public abstract Task AddGame(Game model);
+        public abstract Task AddGame(NewGame model);
 
         [Sql("UpdateGame", Schema = "dbo")]
         public abstract Task UpdateGame(int id, Game model);
