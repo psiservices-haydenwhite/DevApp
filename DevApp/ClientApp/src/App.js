@@ -10,13 +10,6 @@ const App = () => {
         founded: "",
         headquarters: ""
     })
-    //const [showAddForm, setShowAddForm] = useState(false)
-    //const [addDeveloper, setAddDeveloper] = useState(false)
-    //const [addFormData, setAddFormData] = useState({
-    //    name: "",
-    //    founded: "",
-    //    headquarters: ""
-    //})
 
     const fetchDevelopers = () => {
         fetch("api/Developer/AllDevelopers")
